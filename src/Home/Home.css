@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+  background-color: white;
+}
+
+
+.mainpage{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.point1{
+  height: 100vh;
+  padding-left: 70px;
+  width: 100%;
+  position: relative;
+}
+.alloftexts{
+  width: 100%;
+  padding-left: 70px;
+  animation: texts;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.point2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 100%;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    animation-name: point2;
+display: grid;
+place-items: center;
+}
+.point2 {
+	-webkit-animation: point2 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: point2 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes point2 {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+
+  .coder{
+    width: 320px;
+    height: 350px;
+    position: fixed;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    animation-name: coder;
+    place-items: center;
+  }
+
+
+  .coder {
+    -webkit-animation: coder 1.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: coder 1.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation-delay: 0.9s;
+  }
+
+
+  @keyframes coder {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+.text2{
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(141,66,26);
+  animation-name: text2;
+}
+.text2 {
+	-webkit-animation: text2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes text2 {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.text3{
+  font-size: 80px;
+  font-weight: bolder;
+  color: black;
+  animation-name: text3;
+}
+.text4{
+    font-size: 80px;
+}
+
+.text3 {
+	-webkit-animation: text3 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text3 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text3 {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.buttons{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  animation-name: buttons;
+}
+.buttons {
+	-webkit-animation: buttons 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: buttons 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: 1s;
+}
+@keyframes buttons {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.btn1{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 230px;
+  height: 45px;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 13px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
+}
+
+.btn1:hover{
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+.btn2{
+    display: flex;
+    justify-content: center;
+    gap: 12px;  
+  width: 130px;
+  height: 45px;
+  color: white;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 13px;
+  border: 2px solid black;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.btn2:hover{
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+
+
+
+.btn3 {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: white; /* Başlanğıc arxa fon rəngi */
+  border: none;
+  border-radius: 100%;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.1s ease;
+}
+
+.transparent {
+  background-color: transparent; /* Menyu açıq olarkən arxa fon şəffaf olur */
+  color: white;
+}
+
+
+
+.icon1{
+  font-size: 25px;
+}
+
+.icon2{
+  font-size: 25px;
+  display: none;
+}
+
+.btn3:hover {
+  background-color: transparent; /* Hover ilə arxa fonu şəffaf edir */
+}
+
+.btn3:hover .icon1,
+.btn3:hover .icon2 {
+  color: white; /* Hover ilə ikonları ağ edir */
+}
+
+.menu{
+  position: fixed !important;
+  z-index: 9999 !important;
+  width: 100%;
+  height: auto;
+  float: right;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.menubar{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  animation-name: menubar;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    animation-name: point2;
+}
+ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menubar {
+	-webkit-animation: menubar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: menubar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes menubar {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text10{
+  width: 200px;
+  height: 40px;
+  color: white;
+  list-style: none;
+  font-size: 23px;
+  font-family: cursive;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 12px;
+  animation-name: text10;
+}
+.text10:hover{
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+}
+
+.text10 {
+	-webkit-animation: text10 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text10 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: 0.5s;
+}
+
+@keyframes text10 {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Əlavə edə biləcəyiniz digər CSS qaydaları */
+.menu-open .menubar {
+  display: block;
+}
+
+.point3{
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.coder1{
+  width: 300px;
+  height: 350px;
+  animation-name: coder;
+  place-items: center;
+}
+
+
+@media only screen and (max-width: 990px){
+  .point2{
+   border-bottom-left-radius: 0;
+  }
+  .btn3{
+    margin: 0;
+  }
+  .coder{
+    margin: 0;
+  }
+  .menubar{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+  }
+  .alloftexts{
+    padding: 0;
+    margin: 0;
+  }
+  .point1{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 908px){
+  .mainpage{
+    display: grid;
+    flex-direction: column;
+  }
+
+  .point2{
+    display: none;
+  }
+  .menubar{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .point3{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn3{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .btn3:hover{
+    background-color: black;
+  }
+  .point1{
+    padding: 0;
+    width: 100%;
+  }
+  .alloftexts{
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 540px){
+  .text4{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .btn3{
+    right: 0;
+  }
+}
+

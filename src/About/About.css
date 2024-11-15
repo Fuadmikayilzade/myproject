@@ -1,0 +1,621 @@
+body{
+    background-color: black;
+}
+
+.d-block {
+    height: 540px;
+    padding-inline: 60px;
+    background-color: black;
+    
+}
+
+
+  .point4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: auto;
+    padding-inline: 60px;
+    padding-top: 30px;
+    gap: 30px;
+    padding-bottom: 10px;
+  }
+
+
+
+
+  /* From Uiverse.io by Prince4fff */ 
+.card10{
+  width: 100%;
+}
+
+.card10 p {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    width: 100%;
+    display: flex;
+
+  }
+  p.education{
+    font-size: 16px;
+  }
+  .card1 p{
+    display: flex;
+  }
+  .card10 p.text1{
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .card1 p.small{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  
+.smalltext{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .card1 p.goldtext{
+    color: rgb(216, 182, 46);
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .card1 p.answer{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .card10 p.small {
+    font-size: 14px;
+  }
+  .card10 p.text1{
+    font-size: 30px;
+  }
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+    font-size: 50px;
+    font-weight: 800px;
+    padding-right: 15px;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    width: 100%; 
+    height: 330px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #000000;
+    height: 64px;
+    width: 64px;
+    border-radius: 64px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+    height: 100px;
+    width: 120px;
+
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .card1:hover p.goldtext {
+    transition: all 0.3s ease-out;
+    color: rgb(216, 182, 46);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+  
+  .card2:hover:before {
+    transform: scale(2.15);
+  }
+  
+  .card3 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card3 .go-corner {
+    opacity: 0.7;
+  }
+  
+  .card3:hover {
+    border: 1px solid #00838d;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+  
+  .card3:hover p {
+    color: #00838d;
+  }
+  
+  .card3:hover .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+  
+  .card4 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .card4 .go-corner {
+    background-color: #00838d;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  }
+  
+  .card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+  
+  .card4:hover {
+    border: 1px solid #cd3d73;
+  }
+  
+  .card4 h3 {
+    margin-top: 8px;
+  }
+  
+  .card4:hover .go-corner {
+    margin-right: -12px;
+  }
+  
+  .card4:hover .go-arrow {
+    opacity: 1;
+  }
+
+
+
+
+  /* From Uiverse.io by Praashoo7 */ 
+.card11 {
+    width: 17em;
+    height: 25.6em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card11 span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .card11 .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+  }
+  
+  .card11 .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .card11 .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 15px; /* Ensures the image matches the border-radius of the container */
+  }
+  
+  .card11 .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .card11 a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card11 a:hover {
+    color: red;
+  }
+  
+  .card11 button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .card11 button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+
+
+
+
+  /* From Uiverse.io by joe-watson-sbf */ 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.flip-card-back {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transform: rotateY(180deg);
+}
+
+.gif{
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1196px) {
+  .flip-card{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .d-block{
+    height: 300px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .d-block{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .d-block{
+    height: 200px;
+  }
+  .card1{
+    height: 430px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .card1{
+    height: 430px;
+  }
+}
+
+@media screen and (max-width:550px) {
+.point3{
+  display: grid;
+}
+.card10{
+  display: none;
+}
+}
+@media screen and (min-width:550px) {
+
+  .card11{
+    display: none;
+  }
+  }
+
+.point3{
+  background-color: black;
+  height: auto;
+  padding-top: 10px;
+}
+
+.charts{
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.column{
+  flex-direction: column;
+  padding-inline: 5%;
+  padding-top: 20px;
+}
+.colortext{
+  color: white;
+  font-size: 15px;
+}
+.chartbox {
+  width: 100%;
+  height: 20px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
+}
+
+.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #000; /* Daha yaxşı görünmək üçün ziddiyyətli rəng */
+  font-weight: bold;
+  z-index: 1; /* Percent yazısının chartın üstündə görünməsi üçün */
+  opacity: 0; /* Başlanğıcda görünməz olsun */
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1s; /* 2 saniyə gecikmə ilə görünəcək */
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Görünməsini təmin edirik */
+  }
+}
+
+.chart {
+  background-color: rgb(255, 179, 0);
+  width: 0; /* Başlanğıcda genişliyi sıfır olacaq */
+  height: 20px;
+  border-radius: 50px;
+  animation: grow 1s ease-out forwards; /* 2 saniyəlik animasiya */
+}
+
+@keyframes grow {
+  from {
+    width: 0; /* Animasiya sıfırdan başlayacaq */
+  }
+  to {
+    width: 98%; /* Animasiya 98%-ə qədər genişlənəcək */
+  }
+}
+
+
+.chart1{
+  background-color: rgb(255, 179, 0);
+  width: 95%;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: grow1 1s ease-out forwards; /* 2 saniyəlik animasiya */
+
+}
+@keyframes grow1 {
+  from {
+    width: 0; /* Animasiya sıfırdan başlayacaq */
+  }
+  to {
+    width: 95%; /* Animasiya 98%-ə qədər genişlənəcək */
+  }
+}
+
+.chart2{
+  background-color: rgb(255, 179, 0);
+  width: 80%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  animation: grow2 1s ease-out forwards; /* 2 saniyəlik animasiya */
+
+}
+@keyframes grow2 {
+  from {
+    width: 0; /* Animasiya sıfırdan başlayacaq */
+  }
+  to {
+    width: 80%; /* Animasiya 98%-ə qədər genişlənəcək */
+  }
+}
+
+.chart3{
+  background-color: rgb(255, 179, 0);
+  width: 80%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  animation: grow3 1s ease-out forwards; /* 2 saniyəlik animasiya */
+
+}
+@keyframes grow3 {
+  from {
+    width: 0; /* Animasiya sıfırdan başlayacaq */
+  }
+  to {
+    width: 80%; /* Animasiya 98%-ə qədər genişlənəcək */
+  }
+}
+
+.chart4{
+  background-color: rgb(255, 179, 0);
+  width: 90%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  animation: grow4 1s ease-out forwards; /* 2 saniyəlik animasiya */
+
+}
+@keyframes grow4 {
+  from {
+    width: 0; /* Animasiya sıfırdan başlayacaq */
+  }
+  to {
+    width: 90%; /* Animasiya 98%-ə qədər genişlənəcək */
+  }
+}
+
+.myskills{
+  width: 100%;
+  padding-left: 5%;
+  font-size: 25px;
+  color: white;
+  font-weight: 800;
+  font-family: cursive;
+}
