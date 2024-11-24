@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/myproject/static/css/main.772c5592.css",
+    "main.js": "/myproject/static/js/main.3d58d078.js",
+    "static/js/453.ef07c75a.chunk.js": "/myproject/static/js/453.ef07c75a.chunk.js",
+    "static/media/escr.jpg": "/myproject/static/media/escr.b6e95996349855f7f781.jpg",
+    "static/media/kingcoder.jpg": "/myproject/static/media/kingcoder.17f9a189c5146595f258.jpg",
+    "static/media/coding.jpg": "/myproject/static/media/coding.a28182d0592b591cbab3.jpg",
+    "static/media/codelogo.jpg": "/myproject/static/media/codelogo.6b10ef8032f60684c994.jpg",
+    "static/media/coder3.webp": "/myproject/static/media/coder3.ab21a005d56824b7f132.webp",
+    "static/media/ideaimg.avif": "/myproject/static/media/ideaimg.010b5e81e4d26784b46e.avif",
+    "static/media/gif.webp": "/myproject/static/media/gif.636cf4143bf492f74442.webp",
+    "static/media/gif1.webp": "/myproject/static/media/gif1.e26ab569b3de30ed73b9.webp",
+    "static/media/designer.avif": "/myproject/static/media/designer.e300fbe4cade8b18dfd1.avif",
+    "static/media/developer.avif": "/myproject/static/media/developer.d5887d68c69e59a10757.avif",
+    "static/media/cameraman.avif": "/myproject/static/media/cameraman.e7fc3a0d9299467593a9.avif",
+    "index.html": "/myproject/index.html",
+    "main.772c5592.css.map": "/myproject/static/css/main.772c5592.css.map",
+    "main.3d58d078.js.map": "/myproject/static/js/main.3d58d078.js.map",
+    "453.ef07c75a.chunk.js.map": "/myproject/static/js/453.ef07c75a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.772c5592.css",
+    "static/js/main.3d58d078.js"
+  ]
+}
