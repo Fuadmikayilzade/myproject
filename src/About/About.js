@@ -137,7 +137,7 @@ function About() {
 
 
 
-<div className='point3'>
+<div className='point5'>
 
 <div className="card11">
   <div className="img">

@@ -11,6 +11,9 @@ const Portfolio = () => {
   const handleButtonClick = () => {
     navigate('/About'); // About səhifəsinə yönləndirmə
   };
+  const handleButtonClick1 = () => {
+    navigate('/Contact'); // Contact səhifəsinə yönləndirmə
+  };
   return (
     <div className="mainpage">
       <div className="point1">
@@ -23,7 +26,7 @@ const Portfolio = () => {
             <button className="btn1" onClick={handleButtonClick}>
               MORE ABOUT ME <FontAwesomeIcon icon={faArrowRight} />
             </button>
-            <button className="btn2">
+            <button className="btn2" onClick={handleButtonClick1}>
               HIRE ME <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
@@ -42,3 +45,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+

@@ -167,6 +167,21 @@ body{
   gap: 30px;
 }
 
+.flexcolumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+.flexcolumn1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
 /* From Uiverse.io by satyamchaudharydev */ 
 .cardbox {
   --bg: #f7f7f8;
@@ -234,3 +249,35 @@ body{
   opacity: 0;
 }
 
+
+@media screen and (max-width: 985px) {
+  .cardboxes{
+    display: block;
+    padding-top: 30px;
+  }
+  .flexcolumn1{
+    padding-top: 30px;
+  }
+}
+
+
+@media screen and (max-width: 585px) {
+  .cardboxes{
+    padding-top: 30px;
+  }
+  .flexcolumn {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+  .flexcolumn1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+}

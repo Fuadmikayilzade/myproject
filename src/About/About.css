@@ -448,7 +448,7 @@ body{
 }
 
 @media screen and (max-width:550px) {
-.point3{
+.point5{
   display: grid;
 }
 .card10{
@@ -462,7 +462,7 @@ body{
   }
   }
 
-.point3{
+.point5{
   background-color: black;
   height: auto;
   padding-top: 10px;

@@ -86,6 +86,10 @@ function Projects() {
 
       <div className='cardboxes'>
 
+        <div className='flexcolumn'>
+
+
+
  <div class="cardbox" onClick={openNewWindow}>
     <strong>Website</strong>
     <div class="card__body">
@@ -102,29 +106,14 @@ function Projects() {
     <span>Follow us</span>
 </div>
 
-<div class="cardbox">
-<strong>Website</strong>
-<div class="card__body">
-        Get UI elements that help you stand out.
-    </div>
-    <span>Follow us</span>
-</div>
+        </div>
 
 
-<div class="cardbox">
-<strong>Website</strong>
-<div class="card__body">
-        Get UI elements that help you stand out.
-    </div>
-    <span>Follow us</span>
-</div>
-
-      </div>
+        <div className='flexcolumn1'>
 
 
 
-      <div className='cardboxes'>
-<div class="cardbox">
+ <div class="cardbox" onClick={openNewWindow}>
     <strong>Website</strong>
     <div class="card__body">
         Get UI elements that help you stand out.
@@ -140,6 +129,28 @@ function Projects() {
     <span>Follow us</span>
 </div>
 
+        </div>
+
+        
+      </div>
+
+
+
+      <div className='cardboxes'>
+
+
+        <div className='flexcolumn'>
+
+
+
+ <div class="cardbox" onClick={openNewWindow}>
+    <strong>Website</strong>
+    <div class="card__body">
+        Get UI elements that help you stand out.
+    </div>
+    <span>Follow us</span>
+</div>
+
 <div class="cardbox">
 <strong>Website</strong>
 <div class="card__body">
@@ -148,6 +159,20 @@ function Projects() {
     <span>Follow us</span>
 </div>
 
+        </div>
+
+
+        <div className='flexcolumn1'>
+
+
+
+ <div class="cardbox" onClick={openNewWindow}>
+    <strong>Website</strong>
+    <div class="card__body">
+        Get UI elements that help you stand out.
+    </div>
+    <span>Follow us</span>
+</div>
 
 <div class="cardbox">
 <strong>Website</strong>
@@ -156,6 +181,9 @@ function Projects() {
     </div>
     <span>Follow us</span>
 </div>
+
+        </div>
+
 
       </div>
 

@@ -11,6 +11,8 @@ body{
 
 
 .mainpage{
+  width: 100%;
+  height: auto;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -25,7 +27,7 @@ body{
 }
 .alloftexts{
   width: 100%;
-  padding-left: 70px;
+  height: auto;
   animation: texts;
   position: absolute;
   top: 50%;
@@ -148,6 +150,8 @@ place-items: center;
 }
 
 .buttons{
+  width: 100%;
+  height: auto;
   margin-top: 10px;
   display: flex;
   gap: 10px;
@@ -226,7 +230,7 @@ place-items: center;
   top: 20px;
   right: 20px;
   z-index: 9999;
-  background-color: white; /* Başlanğıc arxa fon rəngi */
+  background-color: white; 
   border: none;
   border-radius: 100%;
   color: rgb(0, 0, 0);
@@ -236,7 +240,7 @@ place-items: center;
 }
 
 .transparent {
-  background-color: transparent; /* Menyu açıq olarkən arxa fon şəffaf olur */
+  background-color: transparent; 
   color: white;
 }
 
@@ -252,12 +256,12 @@ place-items: center;
 }
 
 .btn3:hover {
-  background-color: transparent; /* Hover ilə arxa fonu şəffaf edir */
+  background-color: transparent; 
 }
 
 .btn3:hover .icon1,
 .btn3:hover .icon2 {
-  color: white; /* Hover ilə ikonları ağ edir */
+  color: white; 
 }
 
 .menu{
@@ -349,7 +353,6 @@ ul{
   display: none;
 }
 
-/* Əlavə edə biləcəyiniz digər CSS qaydaları */
 .menu-open .menubar {
   display: block;
 }
@@ -395,11 +398,6 @@ ul{
 }
 
 @media only screen and (max-width: 908px){
-  .mainpage{
-    display: grid;
-    flex-direction: column;
-  }
-
   .point2{
     display: none;
   }
@@ -410,8 +408,7 @@ ul{
   }
 
   .point3{
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   .btn3{
@@ -434,12 +431,20 @@ ul{
 }
 
 @media only screen and (max-width: 540px){
+  .point1{
+    padding: 0;
+    width: 100%;
+  }
   .text4{
     display: none;
   }
 }
 
 @media screen and (max-width: 400px){
+  .point1{
+    padding: 0;
+    width: 100%;
+  }
   .btn3{
     right: 0;
   }

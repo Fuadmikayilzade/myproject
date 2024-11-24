@@ -71,8 +71,8 @@ const Portfolio = () => {
 
   const navigate = useNavigate();
   
-  const handleButtonClick = () => {
-    navigate('/'); // About səhifəsinə yönləndirmə
+  const handleButtonClick2 = () => {
+    navigate('/'); // Home səhifəsinə yönləndirmə
   };
 
   return (
@@ -80,7 +80,7 @@ const Portfolio = () => {
       {/* Menu Button */}
       <div className='menu'>
         {/* FM elementini menyu açıq olduqda gizlətmək üçün şərt */}
-        <h6 className={`fm ${menuOpen ? 'hidden' : ''}`} onClick={handleButtonClick}>FM</h6>
+        <h6 className={`fm ${menuOpen ? 'hidden' : ''}`} onClick={handleButtonClick2}>FM</h6>
         <button className={`btn3 ${menuOpen ? 'transparent' : ''}`} onClick={toggleMenu}>
           <FontAwesomeIcon className='icon1' icon={menuOpen ? faX : faBars} />
         </button>
@@ -93,7 +93,7 @@ const Portfolio = () => {
           <Link to="/about" onClick={closeMenu} style={{ textDecoration: 'none' }}><li className='text10'>About</li></Link>
           <Link to="/services" onClick={closeMenu} style={{ textDecoration: 'none' }}><li className='text10' >Services</li></Link>
           <Link to="/projects" onClick={closeMenu} style={{ textDecoration: 'none' }}><li className='text10' >Projects</li></Link>
-          <li className='text10' onClick={closeMenu}>Contact</li>
+          <Link to="/contact" onClick={closeMenu} style={{ textDecoration: 'none' }}><li className='text10' >Contact</li></Link>
         </ul>
       </div>
     </div>
