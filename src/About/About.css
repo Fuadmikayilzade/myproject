@@ -463,6 +463,9 @@ body{
   }
 
 .point5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   height: auto;
   padding-top: 10px;
