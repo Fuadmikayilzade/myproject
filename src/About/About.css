@@ -39,6 +39,7 @@ body{
 
   }
   p.education{
+    padding-top: 10px;
     font-size: 16px;
   }
   .card1 p{
@@ -59,16 +60,19 @@ body{
     justify-content: flex-start;
   }
   .card1 p.goldtext{
+    padding-top: 10px;
     color: rgb(216, 182, 46);
     font-size: 16px;
     font-weight: 600;
   }
   .card1 p.answer{
+    padding-top: 10px;
     font-size: 16px;
     font-weight: 500;
   }
   
   .card10 p.small {
+    padding-top: 10px;
     font-size: 14px;
   }
   .card10 p.text1{
@@ -434,8 +438,8 @@ body{
   }
 }
 @media screen and (max-width: 420px) {
-  .d-block{
-    height: 200px;
+  .slides{
+   display: none;  
   }
   .card1{
     height: 430px;
@@ -485,134 +489,89 @@ body{
   color: white;
   font-size: 15px;
 }
+
+
+
+
+.charts {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.column {
+  margin-bottom: 10px;
+}
+
 .chartbox {
+  margin-top: 10px;
+  position: relative;
   width: 100%;
   height: 20px;
-  border-radius: 50px;
   background-color: white;
-  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 1;
   font-size: 14px;
-  color: #000; /* Daha yaxşı görünmək üçün ziddiyyətli rəng */
-  font-weight: bold;
-  z-index: 1; /* Percent yazısının chartın üstündə görünməsi üçün */
-  opacity: 0; /* Başlanğıcda görünməz olsun */
-  animation: fadeIn 1s ease-out forwards;
-  animation-delay: 1s; /* 2 saniyə gecikmə ilə görünəcək */
+  font-weight: 600;
+  color: #000000;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
 }
-@keyframes fadeIn {
-  to {
-    opacity: 1; /* Görünməsini təmin edirik */
-  }
+
+.chart,
+.chart1,
+.chart2,
+.chart3,
+.chart4 {
+  height: 100%;
+  border-radius: 10px;
+  background-size: 200% 100%;
+  background-position: 0% 50%; /* Başlanğıc mövqeyi */
+  transition: background-position 2s ease-in-out; /* Smooth animation */
 }
 
 .chart {
-  background-color: rgb(255, 179, 0);
-  width: 0; /* Başlanğıcda genişliyi sıfır olacaq */
-  height: 20px;
-  border-radius: 50px;
-  animation: grow 1s ease-out forwards; /* 2 saniyəlik animasiya */
+  width: 98%;
+  background-color: rgb(255, 153, 0);
 }
 
-@keyframes grow {
-  from {
-    width: 0; /* Animasiya sıfırdan başlayacaq */
-  }
-  to {
-    width: 98%; /* Animasiya 98%-ə qədər genişlənəcək */
-  }
-}
-
-
-.chart1{
-  background-color: rgb(255, 179, 0);
+.chart1 {
   width: 95%;
-  height: 20px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  animation: grow1 1s ease-out forwards; /* 2 saniyəlik animasiya */
-
-}
-@keyframes grow1 {
-  from {
-    width: 0; /* Animasiya sıfırdan başlayacaq */
-  }
-  to {
-    width: 95%; /* Animasiya 98%-ə qədər genişlənəcək */
-  }
+  background-color: rgb(255, 153, 0);
 }
 
-.chart2{
-  background-color: rgb(255, 179, 0);
+.chart2 {
   width: 80%;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  border-radius: 50px;
-  align-items: center;
-  position: relative;
-  animation: grow2 1s ease-out forwards; /* 2 saniyəlik animasiya */
-
-}
-@keyframes grow2 {
-  from {
-    width: 0; /* Animasiya sıfırdan başlayacaq */
-  }
-  to {
-    width: 80%; /* Animasiya 98%-ə qədər genişlənəcək */
-  }
+  background-color: rgb(255, 153, 0);
 }
 
-.chart3{
-  background-color: rgb(255, 179, 0);
+.chart3 {
   width: 80%;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  border-radius: 50px;
-  align-items: center;
-  position: relative;
-  animation: grow3 1s ease-out forwards; /* 2 saniyəlik animasiya */
-
-}
-@keyframes grow3 {
-  from {
-    width: 0; /* Animasiya sıfırdan başlayacaq */
-  }
-  to {
-    width: 80%; /* Animasiya 98%-ə qədər genişlənəcək */
-  }
+  background-color: rgb(255, 153, 0);
 }
 
-.chart4{
-  background-color: rgb(255, 179, 0);
+.chart4 {
   width: 90%;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  border-radius: 50px;
-  align-items: center;
-  position: relative;
-  animation: grow4 1s ease-out forwards; /* 2 saniyəlik animasiya */
+  background-color: rgb(255, 153, 0);
+}
 
+/* Aktiv sinif üçün */
+.active {
+  background-position: 100% 50%;
 }
-@keyframes grow4 {
-  from {
-    width: 0; /* Animasiya sıfırdan başlayacaq */
-  }
-  to {
-    width: 90%; /* Animasiya 98%-ə qədər genişlənəcək */
-  }
-}
+
+
+
 
 .myskills{
   width: 100%;

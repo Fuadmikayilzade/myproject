@@ -70,7 +70,6 @@
     flex-direction: column;
     display: flex; /* Display dəyərini əlavə etdik */
     justify-content: space-between;
-    justify-content: center;
     padding-inline: 20px;
     padding-top: 20px;
   }
@@ -84,6 +83,13 @@
     z-index: 9999; /* Z-index dəyərini azaldıq */
   }
   
+  .menubutton{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .btn3 {
     width: 70px;
@@ -97,6 +103,39 @@
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.1s ease;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 380px) {
+    .btn3{
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    .icon1{
+      height: 20px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .btn3{
+      width: 50px;
+      height: 50px;
+    }
+    .icon1{
+      height: 20px;
+    }
+
+
+  }
+  @media screen and (max-width: 390px) {
+    .btn3{
+      margin-right: 10px;
+    }
+    .icon1{
+      height: 18px;
+    }
+
   }
   
   .transparent {

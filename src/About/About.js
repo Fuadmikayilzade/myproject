@@ -10,14 +10,42 @@ import gif1 from './gif1.webp';
 import evo1 from './evo1.png';
 import evo2 from './evo2.jpg';
 
+document.addEventListener("DOMContentLoaded", () => {
+  const charts = document.querySelectorAll(".chart, .chart1, .chart2, .chart3, .chart4");
+
+  if (charts.length === 0) {
+    console.error("Heç bir .chart elementi tapılmadı.");
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    },
+    {
+      root: null, // Viewport kimi istifadə olunur
+      threshold: 0.2, // Elementin 20%-i görünəndə animasiya başlasın
+    }
+  );
+
+  charts.forEach((chart) => {
+    observer.observe(chart);
+  });
+});
+
 
 
 
 
 function About() {
+  
   return (
     <div>
-      <Carousel data-bs-theme="dark">
+      <Carousel className='slides' data-bs-theme="dark">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -164,62 +192,48 @@ function About() {
 </div>
 
 
-<div className='charts'>
+<div className="charts">
+  <h6 className="myskills">My Skills</h6>
 
-<h6 className='myskills'>My Skilss</h6>
-
-  <div className='column'>
-    <h6 className='colortext'>HTML</h6>
-    <div className='chartbox'>
-      <p className='percent'>98%</p>
-      <div className='chart'></div>
+  <div className="column">
+    <h6 className="colortext">HTML</h6>
+    <div className="chartbox">
+      <p className="percent">98%</p>
+      <div className="chart"></div>
     </div>
   </div>
 
-
-  <div className='column'>
-    <h6 className='colortext'>CSS</h6>
-    <div className='chartbox'>
-        <p className='percent'>95%</p>
-      <div className='chart1'></div>
+  <div className="column">
+    <h6 className="colortext">CSS</h6>
+    <div className="chartbox">
+      <p className="percent">95%</p>
+      <div className="chart1"></div>
     </div>
   </div>
 
-
-
-  <div className='column'>
-    <h6 className='colortext'>JS</h6>
-    <div className='chartbox'>
-      <p className='percent'>80%</p>
-      <div className='chart2'></div>
+  <div className="column">
+    <h6 className="colortext">JS</h6>
+    <div className="chartbox">
+      <p className="percent">80%</p>
+      <div className="chart2"></div>
     </div>
   </div>
 
-
-
-
-  <div className='column'>
-    <h6 className='colortext'>REACT</h6>
-    <div className='chartbox'>
-      <p className='percent'>80%</p>
-      <div className='chart3'></div>
+  <div className="column">
+    <h6 className="colortext">React</h6>
+    <div className="chartbox">
+      <p className="percent">80%</p>
+      <div className="chart3"></div>
     </div>
   </div>
 
-
-
-
-  <div className='column'>
-    <h6 className='colortext'>BOOTSTRAP</h6>
-    <div className='chartbox'>
-      <p className='percent'>90%</p>
-      <div className='chart4'>
-</div>
+  <div className="column">
+    <h6 className="colortext">Bootstrap</h6>
+    <div className="chartbox">
+      <p className="percent">90%</p>
+      <div className="chart4"></div>
     </div>
   </div>
-
-
-
 </div>
 
 

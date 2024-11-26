@@ -81,9 +81,11 @@ const Portfolio = () => {
       <div className='menu'>
         {/* FM elementini menyu açıq olduqda gizlətmək üçün şərt */}
         <h6 className={`fm ${menuOpen ? 'hidden' : ''}`} onClick={handleButtonClick2}>FM</h6>
+        <div className='menubutton'>
         <button className={`btn3 ${menuOpen ? 'transparent' : ''}`} onClick={toggleMenu}>
           <FontAwesomeIcon className='icon1' icon={menuOpen ? faX : faBars} />
         </button>
+        </div>
       </div>
 
       {/* Navigation Menu */}
